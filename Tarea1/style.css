@@ -26,3 +26,8 @@ h2 {
 .cliente dd {
     margin-bottom: 10px;
 }
+.panel{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
