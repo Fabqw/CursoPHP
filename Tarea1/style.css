@@ -1,5 +1,7 @@
-body {
+*{
     font-family: Arial, sans-serif;
+}
+body {
     background-color: #f4f4f4;
     padding: 20px;
 }
@@ -26,8 +28,36 @@ h2 {
 .cliente dd {
     margin-bottom: 10px;
 }
-.panel{
+/* Calculadora style */
+.principal{
     display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
+    justify-content: center;
 }
+.input{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner {
+    background-color: antiquewhite; 
+    display: flex; 
+    padding: 10px;
+    justify-content: center;
+    width: fit-content;
+}
+.numeros, .operadores{
+    margin-right: 5px;
+}
+
+.numeros, .operadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.res{
+    display: grid;
+}
+
+

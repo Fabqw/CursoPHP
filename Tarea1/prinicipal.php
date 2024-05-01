@@ -1,11 +1,20 @@
-<?php
-    include('cliente.php');
-    //Operaciones de la calculadora
-    function suma(){
-        $suma = 1+2;
-        echo $suma;
-    }
-    suma();    
+<?php    
+    $cadena = '';
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if(isset($_POST['calculo'])){
+        $cadena = $_POST['calculo'];
+        if(isset($_POST['boton']) && $_POST['boton'] == "="){
+            $cadena = eval('return '.$_POST['calculo'].';');
+        } else {
+            if(isset($_POST['boton'])){
+            $cadena .= $_POST['boton'];
+            }
+        }
+        if(isset($_POST['boton']) && $_POST['boton'] == "C"){
+            $cadena = '';
+        }
+        }    
+    }    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,30 +25,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Calculadora PHP</h2>
-    <form action="">
-        <input type="text">
-        <div class="panel">
-            <div class="numeros">
-                <input type="button" value="9">
-                <input type="button" value="8">
-                <input type="button" value="7"><br>
-                <input type="button" value="6">
-                <input type="button" value="5">
-                <input type="button" value="4"><br>
-                <input type="button" value="3">
-                <input type="button" value="2">
-                <input type="button" value="1"><br>
-                <input type="button" value="0">
-                <input type="button" value="=">
-            </div>
-            <div class="operadores">
-                <input type="button" value="+"><br>
-                <input type="button" value="-"><br>
-                <input type="button" value="*"><br>
-                <input type="button" value="/"><br>                
-            </div>
+    <h2>Calculadora</h2>
+    <form method="post">
+        <div class="input">
+            <input type="text" name="calculo" value="<?php echo $cadena ?>"/>
         </div>
+        <div class="principal">            
+            <div class="conteiner">            
+                <div class="numeros">
+                    <div>
+                        <input type="submit" name="boton" value="7"/>
+                        <input type="submit" name="boton" value="8"/>
+                        <input type="submit" name="boton" value="9"/>
+                    </div><br>
+                    <div>
+                        <input type="submit" name="boton" value="4"/>
+                        <input type="submit" name="boton" value="5"/>
+                        <input type="submit" name="boton" value="6"/>
+                    </div><br>
+                    <div>
+                        <input type="submit" name="boton" value="1"/>
+                        <input type="submit" name="boton" value="2"/>
+                        <input type="submit" name="boton" value="3"/>
+                    </div><br>
+                    <div>
+                        <input type="submit" name="boton" value="0"/>
+                        <input type="submit" name="boton" value="("/>
+                        <input type="submit" name="boton" value=")"/>
+                    </div>       
+                </div>
+                <div class="operadores">
+                    <input type="submit" name="boton" value="/"/>
+                    <input type="submit" name="boton" value="-"/>
+                    <input type="submit" name="boton" value="+"/>
+                    <input type="submit" name="boton" value="*"/>                               
+                </div>
+                <div class="res">                    
+                    <input type="submit" name="boton" value="="/>
+                    <input type="submit" name="boton" value="C"/>
+                </div>
+            </div>
+        </div>        
     </form>
 </body>
 </html>
+<?php
+include('cliente.php');
+?>  
