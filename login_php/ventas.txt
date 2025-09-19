@@ -1,0 +1,3 @@
+2025-09-19 16:22:53 | Usuario: 123456 | Producto: 123456 | Cantidad: 2
+2025-09-19 16:23:52 | Usuario: 123456 | Producto: 123 | Cantidad: 132 | Precio: 12
+2025-09-19 16:28:31 | Usuario: admin3 | Producto: champu | Cantidad: 100 | Precio: 15

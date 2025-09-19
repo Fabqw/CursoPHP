@@ -1,0 +1,7 @@
+admin,$2y$10$rcm8PNkXyz6Jiqz2W.Q0u.tqx9nzPpS1rWwYPfu18/INiPs4UxGV.,admin
+fabricio,$2y$10$XwseBOZQyXZL51ZD/.2i2eGGpugrzXIiShzmeYZF9OR0uAtNkpf/C,admin
+ronald,$2y$10$aMgljGlUMZ9.vqcbzpgnu.FEWMYHP5NEDuJAodUj.P5ti15tmz/nK,user
+fab,$2y$10$/.R/fyxmu/fshRztQBJKIuSyu4T.f0Kxjhs98C2UgiTisgPBUDK.W,user
+123456,$2y$10$hxlWkM5m4Vq6nlfLLB8speB4/SSoW.8PvnZQzKznj88a3ganN68dm,user
+alizon,$2y$10$np4GFkt1WcCL98WiZzyCWu8bgBMuHwTNBsD96VFgNpW6MH.H7LAlC,admin
+admin3,$2y$10$kk1jTafT0ImS6iAkuqftW.TBJIMPxl28PPuscv0Vo/j//BlTfNA9q,user

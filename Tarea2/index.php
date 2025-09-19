@@ -55,7 +55,18 @@
                 <a href="registro_user.php" class="btn btn-primary">Registrate</a>
             </div>
         </form>        
-    </div>
+    </div>    
 </body>
 </html>
+<!-- 
+Para visualizar este proyecto en Codespaces, necesitas iniciar un servidor web que apunte al directorio donde está tu archivo index.php. 
+Puedes usar el servidor embebido de PHP. Ejecuta este comando en la terminal:
+
+php -S 0.0.0.0:8080 -t /workspaces/CursoPHP/Tarea2
+
+Luego, abre el navegador en la URL proporcionada por Codespaces (normalmente https://<tu-workspace>-8080.app.github.dev).
+
+Si quieres abrirlo automáticamente en el navegador del host, puedes usar:
+"$BROWSER" http://localhost:8080
+-->
 
